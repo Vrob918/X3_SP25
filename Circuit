@@ -1,0 +1,58 @@
+<node>
+name: 1
+position: -40, 40
+</node>
+
+<node>
+name: 2
+position:  40, 40
+</node>
+
+<node>
+name: 3
+position:  40, -40
+</node>
+
+<node>
+name: 4
+position: -40, -40
+</node>
+
+
+<voltage source>
+name: V1
+node1: 2
+node2: 3
+value: 24
+</voltage source>
+
+
+<inductor>
+name: L1
+node1: 3
+node2: 4
+inductance: 0.5
+</inductor>
+
+
+<resistor>
+name: R1
+node1: 4
+node2: 1
+resistance: 250
+</resistor>
+
+
+<capacitor>
+name: C1
+node1: 4
+node2: 1
+capacitance: 0.01
+</capacitor>
+
+
+<wire>
+name: W1
+node1: 1
+node2: 2
+</wire>

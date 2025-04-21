@@ -7,8 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
-   </rect>
+    <height>350</height> </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -19,9 +18,107 @@
      <property name="title">
       <string>Input</string>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <item>
-       <layout class="QGridLayout" name="layout_GridInput"/>
+     <layout class="QGridLayout" name="layout_GridInput">
+      <item row="1" column="0">
+       <widget class="QLabel" name="L_label">
+        <property name="text">
+         <string>L (H):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="L_input">
+        <property name="text">
+         <string>20</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="R_label">
+        <property name="text">
+         <string>R (Ω):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="R_input">
+        <property name="text">
+         <string>10</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="C_label">
+        <property name="text">
+         <string>C (F):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="C_input">
+        <property name="text">
+         <string>0.05</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="Vm_label">
+        <property name="text">
+         <string>Voltage Magnitude (V):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="Vm_input">
+        <property name="text">
+         <string>20</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="freq_label">
+        <property name="text">
+         <string>Frequency (rad/s):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="freq_input">
+        <property name="text">
+         <string>20</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="phase_label">
+        <property name="text">
+         <string>Phase (rad):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="phase_input">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" colspan="2">
+       <widget class="QPushButton" name="simulate_button">
+        <property name="text">
+         <string>Simulate</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="image_label">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
       </item>
      </layout>
     </widget>
